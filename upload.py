@@ -1,14 +1,9 @@
 #!/usr/bin/env python3
 
-import os
-import posixpath
-import http.server
-import urllib.request, urllib.parse, urllib.error
-import html
-import shutil
-import mimetypes
-import re
+import os, posixpath, http.server, urllib.request, urllib.parse, urllib.error, html, shutil, mimetypes, re, socket
 from io import BytesIO
+
+localip = socket.gethostbyname_ex(socket.gethostname())[-1][0]
 
 css = """
 <style>
@@ -189,7 +184,7 @@ class UploadServerHandler(http.server.BaseHTTPRequestHandler):
  
     def copyfile(self, source, outputfile):
         shutil.copyfileobj(source, outputfile)
- 
+
     def guess_type(self, path):
         base, ext = posixpath.splitext(path)
         if ext in self.extensions_map:
@@ -209,6 +204,8 @@ def awesomeserver(HandlerClass = UploadServerHandler, ServerClass = http.server.
     http.server.test(HandlerClass, ServerClass)
  
 if __name__ == '__main__':
-    print("[+] Starting Web File Manager.")
-    print("[?] Github: https://github.com/akatiggerx04/UploadServer")
+    print("\n[+] Starting Web File Manager.")
+    print("[?] You can access this web server within your local network at this URL:")
+    print(f"[>] http://{localip}:8000/")
+    print("\nSimpleHTTPServer Logs:")
     awesomeserver()
