@@ -1,2 +1,3 @@
-# UploadServer
- A simple lightweight python3 web server with an upload feature.
+# UploadServer | A Simple Lightweight Web File Manager
+ 
+A very simple and lightweight python3 web file manager (Upload/View Files).
