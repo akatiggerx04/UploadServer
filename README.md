@@ -4,4 +4,6 @@ A very simple and lightweight python3 web file manager (Upload/View Files).
 
 ## Quickly serve & receive files
 
-`curl -s https://raw.githubusercontent.com/akatiggerx04/UploadServer/main/upload.py | python3 -`
+```sh
+curl -s https://raw.githubusercontent.com/akatiggerx04/UploadServer/main/upload.py | python3 -
+```
