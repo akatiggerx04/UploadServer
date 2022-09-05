@@ -17,3 +17,7 @@ curl -s https://raw.githubusercontent.com/akatiggerx04/UploadServer/main/upload.
 - Share Files Over Local Network.
 - Upload Files Over Local Network.
 - Preview HTML web pages.
+
+### Credits
+
+Forked from https://gist.github.com/touilleMan/eb02ea40b93e52604938.
