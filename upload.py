@@ -209,4 +209,6 @@ def awesomeserver(HandlerClass = UploadServerHandler, ServerClass = http.server.
     http.server.test(HandlerClass, ServerClass)
  
 if __name__ == '__main__':
+    print("[+] Starting Web File Manager.")
+    print("[?] Github: https://github.com/akatiggerx04/UploadServer")
     awesomeserver()
