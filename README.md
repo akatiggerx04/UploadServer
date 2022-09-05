@@ -14,6 +14,6 @@ curl -s https://raw.githubusercontent.com/akatiggerx04/UploadServer/main/upload.
 
 ### Use Cases
 
-- Share Files Over Local Network
-- Upload Files Over Local Network
-- Preview HTML pages
+- Share Files Over Local Network.
+- Upload Files Over Local Network.
+- Preview HTML web pages.
